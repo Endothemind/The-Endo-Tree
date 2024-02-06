@@ -27,7 +27,9 @@ addLayer("p", {
     layerShown(){return true},
     upgrades: {
         11: {
-
+            title: "More exponents",
+            description: "Double your number gain im drooling",
+            cost: new Decimal(1),
         },
     },
 })
