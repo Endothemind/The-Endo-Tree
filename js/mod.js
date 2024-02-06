@@ -1,14 +1,14 @@
 let modInfo = {
-	name: "The Power Tree",
+	name: "The Number Tree",
 	id: "powermod",
-	author: "Bennett",
+	author: "Endo",
 	pointsName: "Number",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
 	initialStartPoints: new Decimal (10), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	offlineLimit: 69,  // In hours
 }
 
 // Set your version in num and name
