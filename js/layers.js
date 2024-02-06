@@ -31,5 +31,10 @@ addLayer("e", {
             description: "Double your number gain im drooling",
             cost: new Decimal(1),
         },
+        12: {
+            title: "Understand exponents",
+            description: "More numbers yummy! 1.5x numbers",
+            cost: new Decimal(5),
+        },
     },
 })
