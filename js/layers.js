@@ -7,7 +7,7 @@ addLayer("e", {
 		points: new Decimal(0),
     }},
     color: "#4BDC13",
-    branches: "S",
+    branches: "s",
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "Exponents", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
@@ -87,6 +87,7 @@ addLayer("s", {
 		points: new Decimal(0),
     }},
     color: "#4248f5",
+    branches: "e",
     requires: new Decimal(2000), // Can be a function that takes requirement increases into account
     resource: "Square", // Name of prestige currency
     baseResource: "Exponents", // Name of resource prestige is based on
