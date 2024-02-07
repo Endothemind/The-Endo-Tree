@@ -88,9 +88,9 @@ addLayer("s", {
     }},
     color: "#4248f5",
     branches: "e",
-    requires: new Decimal(2000), // Can be a function that takes requirement increases into account
+    requires: new Decimal(50000), // Can be a function that takes requirement increases into account
     resource: "Square", // Name of prestige currency
-    baseResource: "Exponents", // Name of resource prestige is based on
+    baseResource: "points", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
