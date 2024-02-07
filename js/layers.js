@@ -19,6 +19,7 @@ addLayer("e", {
         if (hasUpgrade('e', 14)) mult = mult.times(1.5)
         if (hasUpgrade('e', 15)) mult = mult.times(2)
         if (hasUpgrade('e', 18)) gain = gain.times(2.5)
+        if (hasUpgrade('s', 11)) gain = gain.times(10)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -105,11 +106,11 @@ addLayer("s", {
     hotkeys: [
         {key: "e", description: "e: Reset for Exponents", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    milestones: {
-        1: {
-            requirementDescription: "Big numbers are in town",
-            effectDescription: "Could get a square",
-            done() { return player.w.points.gte(50000) }
+    upgrades: {
+        11: {
+            title: "Yummy exponents",
+            description: "10x your exponent gain im dorolring",
+            cost: new Decimal(1),
         },
     },
 })
