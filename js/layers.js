@@ -16,6 +16,7 @@ addLayer("e", {
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
         if (hasUpgrade('e', 14)) mult = mult.times(1.5)
+        if (hasUpgrade('e', 15)) mult = mult.times(2)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -46,6 +47,11 @@ addLayer("e", {
             title: "Decimals",
             description: "Too much posibilities. 1.5x Exponents",
             cost: new Decimal(20),
+        },
+        15: {
+            title: "Eat Number",
+            description: "50% less numbers 2x exponents",
+            cost: new Decimal(45),
         },
     },
 })
