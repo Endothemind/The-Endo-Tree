@@ -109,7 +109,7 @@ addLayer("s", {
         11: {
             requirementDescription: "Big numbers are in town",
             effectDescription: "Get a Square",
-            done() { return player.w.Square.gte(1) }
+            done() { return player.s.Square.gte(1) }
         },
     },
 })
