@@ -50,8 +50,13 @@ addLayer("e", {
         },
         15: {
             title: "Eat Number",
-            description: "50% less numbers 2x exponents",
+            description: "2x exponents",
             cost: new Decimal(45),
+        },
+        16: {
+            title: "Uneat Number",
+            description: "3x Numbers",
+            cost: new Decimal(125),
         },
     },
 })
