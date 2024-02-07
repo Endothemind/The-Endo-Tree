@@ -18,7 +18,7 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
-	<h3>v0.0</h3><br>
+	<h3>v0.1</h3><br>
 		- Added 4 upgrades<br>
 		- Removed Herobrine`
 
@@ -47,6 +47,7 @@ function getPointGen() {
 	if (hasUpgrade('e', 12)) gain = gain.times(1.5)
 	if (hasUpgrade('e', 13)) gain = gain.times(1.3)
 	if (hasUpgrade('e', 16)) gain = gain.times(3)
+	if (hasUpgrade('e', 17)) gain = gain.times(upgradeEffect('e', 17))
 	return gain
 }
 

@@ -58,5 +58,14 @@ addLayer("e", {
             description: "3x Numbers",
             cost: new Decimal(125),
         },
+        17: {
+            title: "Exponential Exponentiality",
+            description: "Exponents and numbers are too confusing!",
+            cost: new Decimal(250),
+            effect() {
+                return player[this.layer].points.add(1).pow(0.5)
+            },
+            effectDisplay() { return format(upgradeEffect(this.layer, this.id))+"x" }
+        },
     },
 })
