@@ -106,7 +106,7 @@ addLayer("s", {
         {key: "e", description: "e: Reset for Exponents", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     milestones: {
-        1: {
+        11: {
             requirementDescription: "Big numbers are in town",
             effectDescription: "Get a Square",
             done() { return player.w.Square.gte(1) }
