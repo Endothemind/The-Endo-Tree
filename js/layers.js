@@ -19,6 +19,7 @@ addLayer("e", {
         if (hasUpgrade('e', 14)) mult = mult.times(1.5)
         if (hasUpgrade('e', 15)) mult = mult.times(2)
         if (hasUpgrade('e', 18)) gain = gain.times(2.5)
+        if (hasUpgrade('s', 11)) gain = gain.times(10)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -105,4 +106,11 @@ addLayer("s", {
     hotkeys: [
         {key: "e", description: "e: Reset for Exponents", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
+    upgrades: {
+        11: {
+            title: "Square rooting",
+            description: "would make it smaller but eh it funneh 10x exponents",
+            cost: new Decimal(1),
+        }
+    }
 })
