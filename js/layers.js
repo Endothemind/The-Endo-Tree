@@ -91,7 +91,7 @@ addLayer("s", {
     requires: new Decimal(2000), // Can be a function that takes requirement increases into account
     resource: "Square", // Name of prestige currency
     baseResource: "Exponents", // Name of resource prestige is based on
-    baseAmount() {return player.square}, // Get the current amount of baseResource
+    baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
@@ -105,8 +105,4 @@ addLayer("s", {
     hotkeys: [
         {key: "e", description: "e: Reset for Exponents", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
-    layerShown(){return true},
-    upgrades: {
-      
-    },
 })
