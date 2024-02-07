@@ -76,6 +76,13 @@ addLayer("e", {
             cost: new Decimal(500),
         },
     },
+    milestones: {
+        0: {
+            requirementDescription: "123 waffles",
+            effectDescription: "blah",
+            done() { return player.w.points.gte(123) }
+        }
+    }
 })
 
 
