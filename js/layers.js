@@ -15,6 +15,7 @@ addLayer("e", {
     exponent: 0.5, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
         mult = new Decimal(1)
+        if (hasUpgrade('e', 14)) gain = gain.times(1.5)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -35,6 +36,16 @@ addLayer("e", {
             title: "Understand exponents",
             description: "More numbers yummy! 1.5x numbers",
             cost: new Decimal(5),
+        },
+        13: {
+            title: "Squares and even more.",
+            description: "Why are there shapes now too much. 1.3x Numbers",
+            cost: new Decimal(15),
+        },
+        14: {
+            title: "Decimals",
+            description: "Too much posibilities. 1.5x Exponents",
+            cost: new Decimal(20),
         },
     },
 })
