@@ -18,6 +18,7 @@ addLayer("e", {
         mult = new Decimal(1)
         if (hasUpgrade('e', 14)) mult = mult.times(1.5)
         if (hasUpgrade('e', 15)) mult = mult.times(2)
+        if (hasUpgrade('e', 18)) gain = gain.times(2.5)
         return mult
     },
     gainExp() { // Calculate the exponent on main currency from bonuses
@@ -71,7 +72,7 @@ addLayer("e", {
         18: {
             title: "understand surroundings",
             description: "Whats out here",
-            cost: new Decimal(200),
+            cost: new Decimal(500),
         },
     },
 })
